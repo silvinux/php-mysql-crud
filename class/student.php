@@ -4,10 +4,10 @@ class Student
     private $conn;
     function __construct() {
     session_start();
-    $servername = "localhost";
-    $dbname = "crud";
-    $username = "root";
-    $password = "";
+    $servername = getenv('DB_HOST');
+    $dbname = getenv('DB_NAME');
+    $username = getenv('DB_USER');
+    $password = getenv('DB_PASS');
   
 
     // Create connection
