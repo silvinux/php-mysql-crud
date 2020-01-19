@@ -44,16 +44,16 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`student_id`, `student_name`, `email_address`, `contact`, `gender`, `country`, `datetime`) VALUES
-(20, 'Isabella', 'isabella@yahoo.com', '01711000005', 'Female', 'Costa Rica', '2017-08-27 20:11:50'),
-(19, 'Sophia', 'sophia@gmail.com', '01711000004', 'Female', 'Belgium', '2017-08-27 20:10:55'),
-(18, 'William', 'william@gmail.com', '01711000003', 'Male', 'Brazil', '2017-08-27 20:10:08'),
-(16, 'Nahid', 'nahid@yahoo.com', '01711000002', 'Male', 'Bangladesh', '2017-08-27 19:57:35'),
-(17, 'Arif', 'arif@gmail.com', '01711000001', 'Male', 'Bangladesh', '2017-08-27 20:04:13'),
-(15, 'Md. Rubel', 'rubel@gmail.com', '01712000000', 'Male', 'Bangladesh', '2017-08-27 19:56:20'),
-(21, 'Michael', 'michael@gmail.com', '01711000006', 'Male', 'Ecuador', '2017-08-27 20:13:02'),
-(22, 'Suman', 'suman@gmail.com', '01711000007', 'Male', 'India', '2017-08-27 20:13:55'),
-(23, 'James', 'james@gmail.com', '01711000009', 'Male', 'United Kingdom', '2017-08-27 20:16:05'),
-(24, 'Asik', 'asik@gmail.com', '01712000010', 'Male', 'Bangladesh', '2017-08-27 20:19:11');
+(01, 'Son Goku', 'goku@dragonball.com', '81311000001', 'Male', 'Japan', '2017-08-27 20:11:50'),
+(02, 'Bulma', 'bulma@dragonball.com', '81311000002', 'Female', 'Japan', '2017-08-27 20:11:50'),
+(03, 'Master Roshi', 'turtlehermit@dragonball.com', '81311000003', 'Male', 'Japan', '2017-08-27 20:11:50'),
+(04, 'Yamcha', 'yamcha@dragonball.com', '81311000004', 'Male', 'Japan', '2017-08-27 20:11:50'),
+(05, 'Krillin', 'krillin@dragonball.com', '81311000005', 'Male', 'Japan', '2017-08-27 20:11:50'),
+(06, 'Tien Shinhan', 'tienshinhan@dragonball.com', '81311000005', 'Male', 'Japan', '2017-08-27 20:11:50'),
+(07, 'Piccolo', 'piccolo@dragonball.com', '81311000005', 'Male', 'Japan', '2017-08-27 20:11:50'),
+(08, 'Son Gohan', 'gohan@dragonball.com', '81311000005', 'Male', 'Japan', '2017-08-27 20:11:50'),
+(09, 'Vegeta', 'vegeta@dragonball.com', '81311000005', 'Male', 'Japan', '2017-08-27 20:11:50'),
+(10, 'Chi-Chi', 'chichi@dragonball.com', '81311000005', 'Male', 'Japan', '2017-08-27 20:11:50'),
 
 --
 -- Indexes for dumped tables
