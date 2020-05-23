@@ -3,7 +3,10 @@ SET time_zone = "+00:00";
 --
 -- Database: `crud`
 --
+
+ALTER USER `crud` IDENTIFIED WITH mysql_native_password BY 'redhat';
 CREATE DATABASE IF NOT EXISTS `crud`;
+GRANT ALL PRIVILEGES ON crud.* TO crud;
 
 USE `crud`;
 
@@ -36,5 +39,3 @@ INSERT INTO `students` (`student_id`, `student_name`, `email_address`, `contact`
 (08, 'Son Gohan', 'gohan@dragonball.com', '81311000005', 'Male', 'Japan', '2017-08-27 20:11:50'),
 (09, 'Vegeta', 'vegeta@dragonball.com', '81311000005', 'Male', 'Japan', '2017-08-27 20:11:50'),
 (10, 'Chi-Chi', 'chichi@dragonball.com', '81311000005', 'Female', 'Japan', '2017-08-27 20:11:50')
-
-ALTER USER `crud` IDENTIFIED WITH mysql_native_password BY 'redhat';
