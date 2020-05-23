@@ -35,4 +35,4 @@ INSERT INTO `students` (`student_id`, `student_name`, `email_address`, `contact`
 (07, 'Piccolo', 'piccolo@dragonball.com', '81311000005', 'Male', 'Japan', '2017-08-27 20:11:50'),
 (08, 'Son Gohan', 'gohan@dragonball.com', '81311000005', 'Male', 'Japan', '2017-08-27 20:11:50'),
 (09, 'Vegeta', 'vegeta@dragonball.com', '81311000005', 'Male', 'Japan', '2017-08-27 20:11:50'),
-(10, 'Chi-Chi', 'chichi@dragonball.com', '81311000005', 'Male', 'Japan', '2017-08-27 20:11:50')
+(10, 'Chi-Chi', 'chichi@dragonball.com', '81311000005', 'Female', 'Japan', '2017-08-27 20:11:50')
