@@ -36,6 +36,6 @@ $ wget https://raw.githubusercontent.com/silvinux/php-mysql-crud/master/database
 $ MYSQL_POD=$(oc get pods --no-headers=true -l deploymentconfig=mysql | awk '{print $1}')
 $ oc cp crud.sql ${MYSQL_POD}:/tmp/
 $ oc exec ${MYSQL_POD} -- bash -c 'mysql -u root < /tmp/crud.sql'
-$ oc new-app --name php -e DB_HOST=mysql -e DB_USER=root -e DB_PASS=redhat -e DB_NAME=crud php:latest~https://github.com/silvinux/php-mysql-crud.git
+$ oc new-app --name php -e DB_HOST=mysql -e DB_USER=crud -e DB_PASS=redhat -e DB_NAME=crud php:latest~https://github.com/silvinux/php-mysql-crud.git
 $ oc expose svc php --hostname=crud.apps.lab.example.com
 ```
