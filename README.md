@@ -1,6 +1,6 @@
-# PHP-MySQL-CRUD in OCP 3.11 with persistent storage
+# PHP-MySQL-CRUD in OCP4 with persistent storage
 
-<b>Resource:</b> HTML, CSS,Bootstrap, PHP ,MySQL + Openshift 3.11
+<b>Resource:</b> HTML, CSS,Bootstrap, PHP ,MySQL + Openshift 4
 
 
 ```
@@ -31,11 +31,11 @@ EOF
 $ cat pv_mysql.yml  | oc create -f -
 
 $ oc new-project crud-demo
-$ oc new-app mysql-persistent --param MYSQL_ROOT_PASSWORD=redhat --param MYSQL_USER=crud --param MYSQL_PASSWORD=redhat --param MYSQL_DATABASE=crud VOLUME_CAPACITY=1Gi -lapp=crud_php_mysql --insecure-registry
+$ oc new-app mysql-persistent --param MYSQL_ROOT_PASSWORD=redhat --param MYSQL_USER=crud --param MYSQL_PASSWORD=redhat --param MYSQL_DATABASE=crud VOLUME_CAPACITY=1Gi -lapp=crud_mysql --insecure-registry
 $ wget https://raw.githubusercontent.com/silvinux/php-mysql-crud/master/database/crud.sql
 $ MYSQL_POD=$(oc get pods --no-headers=true -l deploymentconfig=mysql | awk '{print $1}')
 $ oc cp crud.sql ${MYSQL_POD}:/tmp/
 $ oc exec ${MYSQL_POD} -- bash -c 'mysql -u root < /tmp/crud.sql'
-$ oc new-app --name php -e DB_HOST=mysql -e DB_USER=crud -e DB_PASS=redhat -e DB_NAME=crud php:latest~https://github.com/silvinux/php-mysql-crud.git
+$ oc new-app --name php -e DB_HOST=mysql -e DB_USER=crud -e DB_PASS=redhat -e DB_NAME=crud php:latest~https://github.com/silvinux/php-mysql-crud.git -lapp=crud_php
 $ oc expose svc php --hostname=crud.apps.lab.example.com
 ```
